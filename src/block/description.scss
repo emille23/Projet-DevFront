@@ -1,0 +1,31 @@
+.description {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    padding: 10px;
+
+    background: red;
+
+    @include computer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}
+.description__title{
+    grid-column: 2 span;
+
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.description__textLeft {
+
+}
+.description__textRight {
+    display: none;
+
+    @include computer {
+        display: block;
+    }
+}

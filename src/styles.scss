@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'mixin';
+@import 'block/header';
+@import 'block/hero';
+@import 'block/description';
+@import 'block/tech';
+@import 'block/footer';
+
+* {
+  box-sizing: border-box;
+}

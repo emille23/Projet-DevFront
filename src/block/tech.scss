@@ -1,0 +1,33 @@
+.tech {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    padding: 10px;
+
+    background: gray;
+    text-align: center;
+
+    @include computer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}
+.tech__title {
+    grid-column: 2 span;
+
+    font-size: 1.2em;
+}
+.tech__description {
+    margin: 10px;
+}
+.tech__illustration {
+    display: none;
+
+    height: 100%;
+    width: 50vw;
+
+    @include computer {
+        display: block;
+    }
+}

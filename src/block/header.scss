@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 10vh;
+
+    background: red;
+}
+.header__burger {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+    height: 10vh;
+    width: 10vh;
+
+    background: gray;
+
+    @include computer {
+        display: none;
+    }
+}
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10vh;
+}
+.header__link {
+    display: none;
+
+    @include computer {
+        display: none;
+    }
+}
