@@ -1,46 +1,93 @@
 .header {
+  position: absolute;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
-  height: 10vh;
+  @include computer {
+    position: static;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 
-  background: rgb(22, 30, 40);
+    height: 10vh;
+    width: 100%;
+  }
 }
 .header__burger {
-  height: 10vh;
-  width: 10vh;
-  margin-right: 5vw;
+  position: absolute;
+  display: block;
 
-  background: gray;
+  margin: 20px;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+
+  div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
 
   @include computer {
     display: none;
   }
 }
 .header__menu {
+  position: fixed;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 
-  height: 100%;
-}
-.header__logo {
-  height: 100%;
-  width: auto;
-  margin: 3vw;
-}
-.header__link {
-  display: none;
+  height: 100vh;
+  width: 80vw;
+  top: 0;
+  left: -80vw;
+
+  z-index: 10;
+  background: rgb(22, 30, 40);
 
   @include computer {
-    display: block;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 
+    height: 100%;
+    width: 100%;
+  }
+}
+.header__logo {
+  width: 60%;
+  height: auto;
+  margin: 3vh 0;
+
+  @include computer {
+    height: 100%;
+    width: auto;
+    margin: 3vw;
+  }
+}
+.header__link {
+  display: block;
+  align-self: flex-start;
+
+  margin: 3vh 10vw;
+
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+
+  @include computer {
     margin: 0 2vw;
-
-    text-decoration: none;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    align-self: center;
+    font-size: 1em;
   }
 }

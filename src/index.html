@@ -8,18 +8,19 @@
 </head>
 <body>
     <header class="header">
-        <span class="header__burger"></span>
+        <span class="header__burger"><div></div><div></div><div></div></span>
         <nav class="header__menu">
+            <span class="header__burger"><div></div><div></div><div></div></span>
             <img class="header__logo" src="img/logoHorizontal.png" alt="Logo" />
-            <a class="header__link" href="">Présentation</a>
-            <a class="header__link" href="">Caractéristiques techniques</a>
+            <a class="header__link" href="#description">Présentation</a>
+            <a class="header__link" href="#tech">Caractéristiques techniques</a>
         </nav>
     </header>
     <section class="hero">
         <h1 class="hero__title">La puissance d'un PC gaming sur n'importe quel écran</h1>
         <img class="hero__background" src="img/ghost.png" alt="Shadow Ghost">
     </section>
-    <section class="description">
+    <section class="description" id="description">
         <div>
             <h2 class="description__title">Transforme l'écran que tu veux en un PC gaming</h2>
             <p class="description__text">
@@ -35,7 +36,7 @@
             </p>
         </div>
     </section>
-    <section class="tech">
+    <section class="tech" id="tech">
         <h2 class="tech__title">Shadow Ghost en détail</h2>
         <ul class="tech__description">
             <li><span>Port HDMI</span> 2.0 4K UHD 60Hz / 1080p 144Hz</li>
@@ -49,5 +50,6 @@
     <footer class="footer">
         <a href="">Conditions Générales d’Utilisation</a>
     </footer>
+    <script src="header.js"></script>
 </body>
 </html>
