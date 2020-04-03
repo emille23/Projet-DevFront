@@ -1,20 +1,33 @@
 .hero {
-    position: relative;
+  position: relative;
 
-    height: 80vh;
+  height: 80vh;
 
-    background: black;
+  background: linear-gradient(
+    51deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(126, 32, 32, 1) 77%,
+    rgba(185, 0, 0, 1) 100%
+  );
 }
 .hero__background {
+  position: absolute;
 
+  height: auto;
+  width: 50vw;
+  top: 35%;
+  left: 40%;
 }
 .hero__title {
-    position: absolute;
-    top: 15%;
-    left: 20%;
+  position: absolute;
+  top: 15%;
+  left: 10%;
 
-    width: 50%;
+  width: 50%;
 
-    color: white;
-    font-size: 1.5em;
+  color: white;
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 2.8em;
 }

@@ -1,37 +1,43 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-    height: 10vh;
+  height: 10vh;
 
-    background: red;
+  background: rgb(22, 30, 40);
 }
 .header__burger {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    
-    height: 10vh;
-    width: 10vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 
-    background: gray;
+  height: 10vh;
+  width: 10vh;
 
-    @include computer {
-        display: none;
-    }
+  background: gray;
+
+  @include computer {
+    display: none;
+  }
 }
 .header__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    margin-left: 10vh;
+  height: 100%;
+}
+.header__logo {
+  height: 100%;
+  width: auto;
+  margin: 3vw;
 }
 .header__link {
-    display: none;
+  margin: 0 2vw;
 
-    @include computer {
-        display: none;
-    }
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
