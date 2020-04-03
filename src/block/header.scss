@@ -34,6 +34,8 @@
   display: none;
 
   @include computer {
+    display: block;
+
     margin: 0 2vw;
 
     text-decoration: none;
